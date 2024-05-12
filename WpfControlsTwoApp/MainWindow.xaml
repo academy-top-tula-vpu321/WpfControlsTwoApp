@@ -1,0 +1,118 @@
+﻿<Window x:Class="WpfControlsTwoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfControlsTwoApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+        <!--<TextBox FontSize="30" x:Name="txtBox" MouseEnter="txtBox_MouseEnter">
+            <TextBox.ToolTip>
+                <ToolTip Placement="Mouse"
+                         HorizontalOffset="20"
+                         VerticalOffset="30">
+                    <StackPanel>
+                        <TextBlock Text="This text box"/>
+                        <Image Source="/Icon-notepad.svg.png" Width="50" />
+                    </StackPanel>
+                </ToolTip>
+            </TextBox.ToolTip>
+        </TextBox>
+        <Popup x:Name="popup" 
+               Placement="Mouse"
+               StaysOpen="False">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Pop up window"/>
+                <Image Source="/Icon-notepad.svg.png" Width="50"/>
+            </StackPanel>
+        </Popup>-->
+
+        <!--<Expander Header="Press to view text" 
+                  ExpandDirection="Left">
+            <StackPanel>
+                <TextBlock TextWrapping="Wrap">
+                    Возникает, когда система ввода сообщает о соответствующем событии перетаскивания, имеющем в качестве источника перетаскивания этот элемент. (Унаследовано от UIElement)
+                </TextBlock>    
+            </StackPanel>
+            
+        </Expander>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer
+              x:Name="scroll"
+              Width="200"
+              VerticalScrollBarVisibility="Visible"
+              HorizontalScrollBarVisibility="Visible"
+              CanContentScroll="True">
+            <StackPanel>
+                <Button Height="100"
+                Width="300"
+                Background="Aqua"/>
+                <Button Height="100"
+                Width="250"
+                Background="Beige"/>
+                <Button Height="100"
+                Background="Bisque"/>
+                <Button Height="100"
+                Background="BurlyWood"/>
+                <Button Height="100"
+                Background="Fuchsia"/>
+                <Button Height="100"
+                Background="Gold"/>
+            </StackPanel>
+
+        </ScrollViewer>
+        <StackPanel Grid.Column="1">
+            <Button x:Name="btnUp"
+                    Content="Up" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnUp_Click"/>
+
+            <Button x:Name="btnDown"
+                    Content="Down" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnDown_Click"/>
+
+            <Button x:Name="btnLeft"
+                    Content="Left" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnLeft_Click"/>
+
+            <Button x:Name="btnRight"
+                    Content="Right" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnRight_Click"/>
+
+            <Button x:Name="btnTop"
+                    Content="Top" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnTop_Click"/>
+
+            <Button x:Name="btnBottom"
+                    Content="Bottom" 
+                    Width="200" 
+                    Margin="10" 
+                    Padding="10"
+                    Click="btnBottom_Click"/>
+            <Button Click="Button_Click"/>
+
+        </StackPanel>
+    </Grid>
+        
+        
+    
+</Window>
